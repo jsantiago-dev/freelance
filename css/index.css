@@ -1,0 +1,46 @@
+:root{
+    --white: #fff;
+    --black: #212121;
+    --gray: #757575;
+    --primary: rgba(255,193,7,1);
+    --secundary: #0097a7;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;/* 1rem = 10px*/ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundary);
+}
+
+.principal-navigation{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.principal-navigation a{
+    
+    color: var(--white);
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.title span{
+    font-size: 2rem;
+}
