@@ -16,7 +16,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container{
-    width: 100rem;
+    max-width: 100rem;
     margin: 0 auto;
 }
 
@@ -26,14 +26,30 @@ body{
 
 .principal-navigation{
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
+    flex-direction: column;
+    
 }
 
 .principal-navigation a{
-    
+    display: block;
     color: var(--white);
+    text-align: center;
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.principal-navigation a:hover{
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+@media (min-width: 768px){
+    .principal-navigation{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
 .title{
@@ -43,4 +59,17 @@ body{
 
 .title span{
     font-size: 2rem;
+}
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 768px){
+    .hero{
+        background-image: url(../img/test.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
